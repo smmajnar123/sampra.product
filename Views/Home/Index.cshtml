@@ -1,0 +1,46 @@
+﻿
+
+<div class="jumbotron">
+    <h2 style="text-align:center" >Sampra Products</h2>
+    <div class="product-main-card">
+        @{
+            foreach (var imag in Model.ProductList)
+            {
+                <div class="product-card">
+                    <img src="@Url.Content(imag.ImageUrls)" alt="Delicious Food" class="product-image">
+                    <p class="product-title" style="font-size:16px">@imag.ImageTitle</p>
+                    
+
+                </div>
+            }
+        }
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Paneer and Chicken</h2>
+        <p>
+            Paneer Tikka: Cubes of paneer (Indian cottage cheese) marinated in spices and grilled or sautéed until they are slightly charred and smoky.
+            Chicken Tikka: Boneless chicken pieces marinated in a mixture of yogurt and spices, then roasted or grilled until tender and flavorful.   
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Egg and Vegetables</h2>
+        <p>
+            Egg: Scrambled or fried eggs are a popular filling option, often combined with vegetables and sauces.
+            Vegetables: A mix of sautéed or grilled vegetables like bell peppers, onions, and tomatoes can be used for a vegetarian kathi roll.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Kebabs and Fish</h2>
+        <p>
+            Kebabs: Minced meat (beef, mutton, or chicken) mixed with spices and herbs, shaped into kebabs, and cooked on skewers.
+            Fish: Fish fillets, usually marinated and fried or grilled, can also be used as a filling.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
